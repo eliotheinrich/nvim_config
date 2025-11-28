@@ -9,7 +9,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	ensure_installed = {'rust_analyzer', 'clangd', 'cmake', 'julials', 'ltex', 'pylsp'},
+	ensure_installed = {'rust_analyzer', 'cmake', 'julials', 'ltex', 'pylsp'},
 	handlers = {
 		lsp.default_setup,
 	},

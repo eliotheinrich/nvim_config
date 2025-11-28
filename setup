@@ -1,0 +1,7 @@
+git clone https://github.com/neovim/neovim.git
+cd neovim
+git checkout stable
+make CMAKE_BUILD_TYPE=Release
+sudo make install
+nvim --version
+nvim --headless +"luafile ~/.config/nvim/lua/mystuff/packer.lua" +PackerSync +qa
